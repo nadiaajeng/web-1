@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Biodata</title>
+    <style>
+        body {
+            font-family: arial, sans-serif;
+            background-color: f5f5f5;
+            margin: 20px;
+            border: 1px solid #ccc;
+            
+        }
+        #teks{
+        font-size: 18px;
+        transition: all 0.3s ease; 
+      }
+      button {
+        margin: 5px;
+        padding: 8px 12px;
+        cursor: pointer;
+      }
+
+    </style>
+</head>
+<body>
+ <p1 id="teks">Halo Semuanya!</p1>  
+
+    <button onclick="ubahTeks()">Ubah Teks</button>
+    <button onclick="ubahWarna()">Ubah Warna</button>
+    <button onclick="sembunyikan()">Sembunyikan</button>
+    <button onclick="tampilkan()">Tampilkan</button>
+
+    <script>
+      function ubahTeks() {
+        document.getElementById("teks").textContent = "Teks sudah diubah!";
+      }
+
+      function ubahWarna() {
+        document.getElementById("teks").style.color = "blue";
+      }
+
+      function sembunyikan() {
+        document.getElementById("teks").style.display = "none";
+      }
+
+      function tampilkan() {
+        document.getElementById("teks").style.display = "block";
+      }
+    </script>
+
+</body>
+</html>

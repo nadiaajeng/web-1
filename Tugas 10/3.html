@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Manipulasi jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+      p {
+        font-size: 18px;
+        transition: color 0.3s ease;
+      }
+      button {
+        margin: 5px;
+        padding: 8px 12px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Halo Semuanya!</p>
+    <p>Ini Jennie Blackpink</p>
+
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+
+    <script>
+      $(document).ready(function () {
+        $("#hide").click(function () {
+          $("p").hide();
+        });
+
+        $("#show").click(function () {
+          $("p").show();
+        });
+
+        $("p").hover(
+          function () {
+            $(this).css("color", "blue");
+          },
+          function () {
+            $(this).css("color", "black");
+          }
+        );
+      });
+    </script>
+  </body>
+</html>
